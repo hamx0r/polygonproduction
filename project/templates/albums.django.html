@@ -1,0 +1,27 @@
+{% extends "base.django.html" %}
+
+{% block title %} Recent Projects {% endblock %}
+{% block pagename %}projects{% endblock %}
+{% block body %}
+    <table>
+        <tr>
+            <td id="block-content-left">
+            <div id="content">
+                <h1>Projects</h1>
+                <p>Here are photos of some of our past projects.</p>
+                <br><br>
+                <table id="albums-grid">
+                    <tr>
+                    {% for album_id, album in albums %}
+                        <td>
+                            <span><a href="{{ album.get_absolute_url }}">{{ album.title }}</a></span>
+                             <div><a href="{{ album.get_absolute_url }}"><img src="{{ album.cover_url }}" alt="{{ album.title }} Cover Photo"></a></div>
+                        </td>
+                    {% endfor %}
+                    </tr>
+                </table>
+            </div>
+            </td>
+        </tr>
+    </table>
+{% endblock %}

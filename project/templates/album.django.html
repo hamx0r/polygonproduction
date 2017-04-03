@@ -1,0 +1,30 @@
+{% extends "base.django.html" %}
+
+{% block title %} {{ album.title }} | Projects {% endblock %}
+{% block pagename %}projects{% endblock %}
+{% block body %}
+    <table>
+        <tr>
+            <td id="block-content-left">
+            <div id="content">
+                <h1>{{ album.title }}</h1>
+                <span>{{ album.numphotos }} Photos | <a href="/projects.html">Back to Projects</a></span>
+                <br><br>
+                <table id="photos-grid">
+                    {% for row in table %}
+                        <tr>
+                        {% for photo_id, photo in row %}
+                            <td>
+                            <a href="{{ photo.get_absolute_url }}">
+                                <img src="{{ photo.thumb_url }}" alt="{{ photo.caption }} Cover Photo">
+                            </a>
+                            </td>
+                        {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            </td>
+        </tr>
+    </table>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}Amazing Title{% endblock %}| Polygon Production</title>
+        <meta name="keywords" content="Polygon Production Audio Video Stage Light Karaoke Studio Stage Booth Setup Audio Video CCTV Intercom Sales Rental">
+        <meta name="description" content="Polygon Production is an audio-video production company located in Toronto, Canada.">
+        <link rel="stylesheet" type="text/css" media="screen" href="/static/base-min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/static/screen.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700">
+        {% block extrahead %}{% endblock %}
+    </head>
+    <body class="{% block pagename %}pagename{% endblock %}">
+        <table>
+            <tr>
+                <td id="block-header-left">
+                    <img id="logo" src="/static/logo2_with_name2.gif" alt="Polygon Production">
+                <td id="block-header-right">
+                    {% include "menu.django.html" %}
+                </td>
+            </tr>
+        </table>
+        {% block body %}
+        {% endblock %}
+        <div id="block-footer">
+            <p id="footer">&copy; 2004 - 2015 Polygon Production.  All rights reserved. </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{% extends "base_static.django.html" %}
+
+{% block title %} About Polygon {% endblock %}
+{% block pagename %}home{% endblock %}
+{% block content %}
+<h1>About Polygon</h1>
+<p><span class="dropcap">P</span>olygon Production has been established since 1979 in Toronto, Canada; originally as a retail provider for leading brands of audio and visual products.  Since then, our expertise has expanded to include <a href="{% url 'karaoke' %}" title="We do karaoke set-up.">karaoke and studio design</a>, <a href="{% url 'stage' %}" title="We do stage set-up.">audio-visual system rentals, backstage technical support</a>, and <a href="{% url 'retail' %}" title="Our retail service.">professional repair services</a>.</p>
+
+<p>For the past 25 years, we have served myriad clients in Canada, China, Dominican Repblic, and Hong Kong.</p>
+
+<p>Our dedicated team of friendly, reliable, and professional consultants are happy to assist you anytime, anywhere.  Please do not hesitate to contact usshould you be interested in learning more about our products and services.</p>
+
+<p>What we do:</p>
+<ul>
+    <li>Stage Light</li>
+    <li>Studio Setup</li>
+    <li>Audio &amp; Video</li>
+    <li>Karaoke Setup</li>
+    <li>Stage &amp; Booth Setup</li>
+    <li>CCTV &amp; Intercom</li>
+    <li>Sales &amp; Rental Services</li>
+</ul>
+{% endblock %}
+
+{% block photo %}
+<img src="/static/home.jpg" alt="Setting up the TV wall in Splendid China Tower, Toronto.">
+<span class="title">Splendid China Tower, Toronto</span>
+{% endblock %}

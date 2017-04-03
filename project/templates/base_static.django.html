@@ -1,0 +1,24 @@
+{% extends "base.django.html" %}
+
+{% block title %} About Us {% endblock %}
+{% block pagename %}home{% endblock %}
+{% block body %}
+        <table>
+            <tr>
+                <td id="block-content-left">
+                <div id="content">
+                    {% block content %}
+                    <p>This is a sample content block .... blah blah blah</p>
+                    {% endblock %}
+                </div>
+                </td>
+                <td id="block-content-right">
+                    <div id="photoblock">
+                    {% block photo %}
+                    <p>This is the picture.</p>
+                    {% endblock %}
+                    </div>
+                </td>
+            </tr>
+        </table>
+{% endblock %}

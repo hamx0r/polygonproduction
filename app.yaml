@@ -1,0 +1,16 @@
+application: polygon-production-hrd
+version: 1508-migrate-hrd
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /static
+  static_dir: static
+  
+- url: .*
+  script: project.wsgi.application
+  
+libraries:
+- name: django
+  version: 1.5

@@ -1,0 +1,34 @@
+{% extends "base.django.html" %}
+{% block title %} {{ photo.pos }} | {{ album.title }} | Projects {% endblock %}
+{% block pagename %}projects{% endblock %}
+{% block body %}
+    <table>
+        <tr>
+            <td id="block-content-left">
+            <div id="content">
+                <h1>{{ album.title }}</h1>
+                <table id="photo-header">
+                <tr>
+                    <td><p>Photo {{ photo.pos }} of {{ album.numphotos }} | <a href="{{ album.get_absolute_url }}">Back to Album</a></p></td>
+                    <td id="photo-nav">
+                        <p>
+                        {% if prev_photo %}
+                        <a href="{{ prev_photo.get_absolute_url }}">Prev</a>
+                        {% endif %}
+                        {% if prev_photo and next_photo %}
+                        |
+                        {% endif %}
+                        {% if next_photo %}
+                        <a href="{{ next_photo.get_absolute_url }}">Next</a>
+                        {% endif %}
+                        </p>
+                    </td>
+                </tr>
+                </table>
+                <img id="photo" src="{{ photo.url }}" alt="{{ photo.caption }}">
+                <p id="photo-caption">{{ photo.caption }}</p>
+            </div>
+            </td>
+        </tr>
+    </table>
+{% endblock %}

@@ -1,0 +1,67 @@
+/* Site-wide */
+img {border:0; padding:0px; margin:0px;}
+table {width:100%; border:0; border-collapse:collapse;}
+tr, th, td {border:0; padding:0;}
+
+body {
+    font-family: "Yanone Kaffeesatz", sans-serif; font-size:1.1em;
+    /*font-family: "Lucida Grande","Bitstream Vera Sans",Verdana,sans-serif;*/
+    font-style:normal; font-variant:normal; font-weight:300;
+    color:#333333; margin:0; background-color:#001aa6;}
+
+p, li {margin: 0 10px 0 10px;
+    font-family: "Yanone Kaffeesatz", sans-serif; font-size:1.1em;
+    /*font-family: Verdana,Arial,Helvetica,sans-serif; font-size:0.9em;*/
+    font-style:normal; font-variant:normal; font-weight:300; line-height:1.4;}
+
+h1 {font-size:1.3em; font-weight:400;line-height:1.2em; margin-left:10px; color:#333333;}
+
+a:hover {color:#0028ff; text-decoration:underline;}
+a {color:#0085BD; text-decoration:none;}
+
+ul#navlist { margin:0; padding:0; position:relative; float:right;}
+ul#navlist li {font-family:"Lucida Grande","Bitstream Vera Sans",Verdana,sans-serif;
+    /*font-family: "Lucida Grande","Bitstream Vera Sans",Verdana,sans-serif;*/
+    font-weight:normal; font-size:1.0em;
+    float:left; list-style:none; margin:10px 10px 0 15px; padding:0; overflow:hidden; text-transform:uppercase;
+}
+ul#navlist li:first-letter{font-size: 1.4em;}
+ul#navlist a  { display:inline; color:#001aa6; text-decoration:none;}
+ul#navlist a:hover { color:#0028ff; text-decoration:underline; }
+
+#company-name {font-family: "Geostar", sans-serif; font-weight:700; font-size:4em;
+    text-align:center;}
+.home #nav-home,
+.projects #nav-projects,
+.stage #nav-stage,
+.retail #nav-retail,
+.karaoke #nav-karaoke,
+.contact #nav-contact {font-weight:bold; color:#0028ff;}
+
+#block-header-left   {background-color: #ffffff; width: 30%; vertical-align:top;}
+#block-header-right  {background-color: #ffffff; width: 70%; vertical-align:top;}
+#block-content-left  {background-color: #40ff7a; width: 100%; vertical-align:top;}
+#block-content-right {background-color: #73ff9d; width: 500px;vertical-align:top;}
+#block-footer        {background-color: #001aa6;}
+#footer {font-family: "Yanone Kaffeesatz", sans-serif;
+    /*font-family:"Lucida Grande","Bitstream Vera Sans",Verdana,sans-serif;*/
+    text-align:center; color:#ffffff; font-size:0.8em;}
+#logo {margin: 10px 0 0 5px;}
+#content {min-height: 380px;}
+
+/* Static pages */
+#photoblock {position: relative;}
+#photoblock .title {top:0pt;
+    font-size:1.3em; font-weight:normal;
+    color:#ffffff; text-shadow: 1px 1px 1px #000, 3px 3px 5px #000;
+    left:0pt; margin-top:22px; margin-left:24px; position:absolute;}
+
+/* Albums, Album */
+#albums-grid, #photos-grid {table-layout:fixed; border-spacing:10px; padding:10px; margin:auto; text-align:center; width:100%;}
+#albums-grid a {font-weight:normal;font-size:1.3em;}
+
+/* Photo */
+#photo-header {width:100%;}
+#photo-nav {text-align:right;padding:0 10px 0 0;}
+#photo {margin-left:auto; margin-right:auto; display:block; position:relative;}
+#photo-caption{text-align:left; margin:10px;font-size:1.1em;}
